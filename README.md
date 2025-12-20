@@ -87,26 +87,6 @@ Used to construct traffic scenarios in a clean and readable way.
 
 ---
 
-## 🧱 Project Structure
-
-```
-src/
- ├── control/
- │   ├── algorithms/
- │   ├── bridge/
- │   └── trafficlight/
- ├── factory/
- │   └── intersections/
- ├── handlers/
- │   └── chain/
- ├── model/
- ├── scenario/
- ├── ui/
- │   ├── components/
- │   └── themes/
- └── main/
-     └── Main.java
-```
 
 ---
 
