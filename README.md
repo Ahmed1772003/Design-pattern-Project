@@ -1,160 +1,185 @@
-# Design-pattern-Project
-# 🚦 Smart Traffic Control & Violation Management System
+Design Pattern Project
+🚦 Smart Traffic Control & Violation Management System
 
-A **Java (Maven) desktop application** that simulates traffic signal control and detects traffic violations in a smart intersection environment.  
-The project is designed mainly for **Software Design Patterns** practice, with a clean and modern UI built using **FlatLaf (Dark / Light)**.
+A Java (Maven) desktop application developed to simulate traffic signal control and detect traffic violations within a smart intersection environment.
+This project is mainly intended for practicing Software Design Patterns, featuring a clean and modern user interface built using FlatLaf (Dark / Light).
 
----
+📌 Project Overview
 
-## 📌 Project Overview
+The system simulates real-time traffic flow through a tick-based execution engine, controls traffic lights using interchangeable algorithms, and detects multiple types of traffic violations using a structured processing pipeline.
 
-The system simulates real-time traffic flow using a **tick-based engine**, manages traffic lights using interchangeable control algorithms, and detects different types of traffic violations through a structured processing pipeline.
+The project emphasizes the application of object-oriented design principles and demonstrates how common design patterns can be applied in a practical and realistic software system.
 
-The project focuses on applying **object-oriented design principles** and implementing multiple **design patterns** in a practical and understandable way.
+✨ Key Features
 
----
+Traffic simulation engine based on tick-by-tick execution
 
-## ✨ Key Features
+Traffic violation detection pipeline, including:
 
-- **Traffic simulation engine** (tick-based execution)
-- **Violation detection pipeline**
-  - Speeding violations
-  - Signal violations (crossing stop line)
-  - Emergency vehicle handling
-- **Auto Run mode** (1 tick per second)
-- **Add Vehicle tool**
-  - Plate number
-  - Speed
-  - Stop-line crossing flag
-  - Emergency vehicle flag
-- **User Interface Enhancements**
-  - FlatLaf **Dark & Light themes**
-  - **Theme toggle** (Dark ↔ Light)
-  - Toolbar **icons**
-  - Table row coloring based on violation type
-  - **Last Violation** badge displayed above the table
+Speed limit violations
 
----
+Traffic signal violations (crossing the stop line)
 
-## 🧩 Design Patterns Used
+Emergency vehicle handling
 
-### 1️⃣ Abstract Factory  
-Used to create different intersection configurations dynamically.
+Auto Run mode (1 tick per second simulation)
 
-**Classes:**
-- `IntersectionFactory`
-- `NormalIntersectionFactory`
-- `HighwayIntersectionFactory`
-- `SchoolZoneIntersectionFactory`
+Vehicle creation tool with:
 
----
+Plate number
 
-### 2️⃣ Bridge  
-Separates the **TrafficLight abstraction** from the **control algorithm implementation**, allowing algorithms to change independently.
+Vehicle speed
 
-**Structure:**
-- Abstraction: `TrafficLight`, `BasicTrafficLight`
-- Implementation: `ControlAlgorithm`
-- Algorithms: `FixedTimerAlgorithm`, `AdaptiveTrafficAlgorithm`
+Stop-line crossing indicator
 
----
+Emergency vehicle flag
 
-### 3️⃣ Chain of Responsibility  
-Processes vehicle events step-by-step until a final violation decision is produced.
+User Interface enhancements
 
-**Pipeline Components:**
-- `LoggingHandler`
-- `EmergencyVehicleHandler`
-- `SpeedCheckHandler`
-- `SignalViolationHandler`
-- `FineCalculationHandler`
+FlatLaf Dark & Light themes
 
----
+Theme switching (Dark ↔ Light)
 
-### 4️⃣ Singleton  
-Provides a single global access point for managing and storing violations.
+Toolbar icons
 
-**Class:**
-- `TrafficControlCenter`
+Table row coloring based on violation type
 
----
+Display of the Last Detected Violation above the table
 
-### 5️⃣ Builder
-Used to construct traffic scenarios in a clean and readable way.
+🧩 Design Patterns Used
+1️⃣ Abstract Factory
 
-**Class:**
-- `TrafficScenario.Builder`
+Used to dynamically create different intersection configurations without coupling the system to concrete classes.
 
----
+Main Classes:
+
+IntersectionFactory
+
+NormalIntersectionFactory
+
+HighwayIntersectionFactory
+
+SchoolZoneIntersectionFactory
+
+2️⃣ Bridge
+
+Decouples the TrafficLight abstraction from the control algorithm implementation, allowing both to evolve independently.
+
+Structure:
+
+Abstraction: TrafficLight, BasicTrafficLight
+
+Implementor: ControlAlgorithm
+
+Concrete Algorithms: FixedTimerAlgorithm, AdaptiveTrafficAlgorithm
+
+3️⃣ Chain of Responsibility
+
+Handles vehicle events through a sequence of processing steps until a final violation decision is reached.
+
+Processing Handlers:
+
+LoggingHandler
+
+EmergencyVehicleHandler
+
+SpeedCheckHandler
+
+SignalViolationHandler
+
+FineCalculationHandler
+
+4️⃣ Singleton
+
+Ensures a single shared instance responsible for managing and storing all detected violations.
+
+Class:
+
+TrafficControlCenter
+
+5️⃣ Builder
+
+Used to construct traffic simulation scenarios in a clear and readable manner.
+
+Class:
+
+TrafficScenario.Builder
+
+▶️ How to Run the Project
+
+Ensure Java JDK 17 or later is installed.
+
+Open the project using IntelliJ IDEA or NetBeans.
+
+Allow Maven to automatically download dependencies.
+
+Run the main application from:
+
+src/main/Main.java
 
 
----
+Use the toolbar to:
 
-## ▶️ How to Run the Project
+Add vehicles
 
-1. Make sure **Java JDK 17+** is installed.
-2. Open the project using **IntelliJ IDEA** or **NetBeans**.
-3. Ensure **Maven** dependencies are loaded automatically.
-4. Run the main class:
-   ```
-   src/main/Main.java
-   ```
-5. Use the toolbar to:
-   - Add vehicles
-   - Start Auto Run mode
-   - Switch themes (Dark / Light)
+Enable Auto Run mode
 
----
+Switch between Dark and Light themes
 
-## 🛠️ Technologies Used
+🛠️ Technologies Used
 
-- **Java**
-- **Maven**
-- **Swing**
-- **FlatLaf**
-- **Object-Oriented Design**
-- **Design Patterns**
+Java
 
----
+Maven
 
-## 👥 Team Members
+Swing
 
-| Full Name | Student ID | University Email |
-|---------|------------|------------------|
-| Osama Abdelhakim | 192100032 | 192100032@ecu.edu.eg |
-| Yousef Abdelhady | 192100121 | 192100121@ecu.edu.eg |
-| Ahmed Ashraf | 192100128 | 192100128@ecu.edu.eg |
-| Mohamed Elshazly | 191900035 | 191900035@ecu.edu.eg |
-| Ahmed Montaser | 192100054 | 192100054@ecu.edu.eg |
-| Ali Hazim | 192100116 | 192100116@ecu.edu.eg |
+FlatLaf
 
----
+Object-Oriented Programming
 
-## 🎓 Academic Context
+Software Design Patterns
 
-- **Course:** Software Design Patterns  
-- **University:** Egyptian Chinese University (ECU)  
-- **Academic Year:** 2025 – 2026
+👥 Team Members
+Full Name	Student ID	University Email
+Osama Abdelhakim	192100032	192100032@ecu.edu.eg
 
----
+Yousef Abdelhady	192100121	192100121@ecu.edu.eg
 
-## 🚀 Future Enhancements
+Ahmed Ashraf	192100128	192100128@ecu.edu.eg
 
-- Integration with real-time traffic sensors
-- Advanced AI-based traffic prediction
-- Exporting violation reports (PDF / CSV)
-- Multi-intersection simulation
-- Cloud-based monitoring dashboard
+Mohamed Elshazly	191900035	191900035@ecu.edu.eg
 
----
+Ahmed Montaser	192100054	192100054@ecu.edu.eg
+
+Ali Hazim	192100116	192100116@ecu.edu.eg
+🎓 Academic Context
+
+Course: Software Design Patterns
+
+University: Egyptian Chinese University (ECU)
+
+Academic Year: 2025 – 2026
+
+🚀 Future Enhancements
+
+Integration with real-time traffic sensors
+
+Advanced AI-based traffic prediction
+
+Exporting violation reports (PDF / CSV)
+
+Multi-intersection traffic simulation
+
+Cloud-based monitoring and analytics dashboard
 
 📚 References
 
 • Freeman, E., Robson, E., Bates, B., & Sierra, K. (2020). Head First Design Patterns (2nd ed.). O’Reilly Media.
 
-• ChatGPT – Project idea generation, UI icon suggestions, and assistance in resolving implementation errors.
+• ChatGPT – Project idea generation, UI icon suggestions, and assistance in resolving implementation issues.
 
 • FlatLaf – Flat Look and Feel for Java Swing Applications.
 https://www.formdev.com/flatlaf/
 
-• Course Lectures – Software Design Patterns lectures and materials.
+• Course Lectures – Software Design Patterns lecture materials.
