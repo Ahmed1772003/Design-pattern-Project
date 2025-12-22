@@ -150,16 +150,11 @@ Used to construct traffic scenarios in a clean and readable way.
 
 📚 References
 
-Freeman, E., Robson, E., Bates, B., & Sierra, K. (2020).
-Head First Design Patterns (2nd Edition).
-O’Reilly Media.
+• Freeman, E., Robson, E., Bates, B., & Sierra, K. (2020). Head First Design Patterns (2nd ed.). O’Reilly Media.
 
-ChatGPT.
-Project idea generation, UI icons suggestions, and assistance in resolving implementation errors.
+• ChatGPT – Project idea generation, UI icon suggestions, and assistance in resolving implementation errors.
 
-FlatLaf.
-Flat Look and Feel for Java Swing Applications.
+• FlatLaf – Flat Look and Feel for Java Swing Applications.
 https://www.formdev.com/flatlaf/
 
-Course Lectures.
-Software Design Patterns lectures and materials.
+• Course Lectures – Software Design Patterns lectures and materials.
