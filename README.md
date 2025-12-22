@@ -92,5 +92,47 @@ Used to construct traffic scenarios in a clean and readable way.
 - **Maven**
 - IDE: IntelliJ IDEA or NetBeans (recommended)
 
-2. استنى Maven يحمّل الـ dependencies تلقائيًا.
-3. شغّل الـ main class:
+## 🛠️ Technologies Used
+- Java
+- Maven
+- Swing
+- FlatLaf
+- Object-Oriented Design
+- Design Patterns
+
+---
+
+## 👥 Team Members
+
+| Full Name | Student ID | University Email |
+|----------|------------|------------------|
+| Osama Abdelhakim | 192100032 | 192100032@ecu.edu.eg |
+| Yousef Abdelhady | 192100121 | 192100121@ecu.edu.eg |
+| Ahmed Ashraf | 192100128 | 192100128@ecu.edu.eg |
+| Mohamed Elshazly | 191900035 | 191900035@ecu.edu.eg |
+| Ahmed Montaser | 192100054 | 192100054@ecu.edu.eg |
+| Ali Hazim | 192100116 | 192100116@ecu.edu.eg |
+
+---
+
+## 🎓 Academic Context
+- **Course:** Software Design Patterns  
+- **University:** Egyptian Chinese University (ECU)  
+- **Academic Year:** 2025 – 2026  
+
+---
+
+## 🚀 Future Enhancements
+- Integration with real-time traffic sensors
+- Advanced AI-based traffic prediction
+- Exporting violation reports (PDF / CSV)
+- Multi-intersection simulation
+- Cloud-based monitoring dashboard
+
+---
+
+## 📚 References
+- Freeman, E., Robson, E., Bates, B., & Sierra, K. (2020). *Head First Design Patterns* (2nd ed.). O’Reilly Media.
+- ChatGPT – Project idea generation, UI icon suggestions, and assistance in resolving implementation issues.
+- FlatLaf – Flat Look and Feel for Java Swing Applications: https://www.formdev.com/flatlaf/
+- Course Lectures – Software Design Patterns lectures and materials.
